@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Secular One", sans-serif;
+}
+
+section {
+  width: 550px;
+  height: 900px;
+  margin: 10px auto;
+  background-color: #3D4067;
+  position: relative;
+  overflow: hidden;
+}
+section main {
+  position: relative;
+  z-index: 1;
+}
+section main header {
+  color: #fbfbfb;
+  padding: 35px 35px;
+}
+section main header h3 {
+  font-size: 50px;
+}
+section main header h4 {
+  font-size: 20px;
+  padding-top: 20px;
+}
+section main form {
+  padding-left: 35px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section main form div {
+  color: #E2E3E8;
+  padding-top: 5px;
+  font-size: 13px;
+}
+section main form div input {
+  width: 94%;
+  color: #E2E3E8;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  padding: 8px 0px;
+}
+section main form div i {
+  color: red;
+}
+
+.gender, .typ {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.gender div, .typ div {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.gender div input, .typ div input {
+  display: flex;
+  width: 25px;
+  margin-left: 25%;
+}
+
+.szip {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.szip div:nth-of-type(4) {
+  margin-left: 25%;
+}
+
+.btn {
+  width: 35%;
+  padding: 13px;
+  cursor: pointer;
+  border: 1px solid #ababab;
+  border-radius: 24px;
+  background-color: transparent;
+  color: #E2E3E8;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background-color: #EDA261;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer div {
+  width: 100%;
+  margin-top: 38px;
+  background-color: #524F81;
+  color: #eeeeee;
+  padding: 18px;
+  text-align: center;
+}
+footer div a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer div a:hover {
+  text-decoration: underline;
+}
+
+.anime {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  margin-top: -600px;
+  margin-left: -400px;
+  background: #252E45;
+  border-radius: 40%;
+  animation: Wave 20s linear infinite;
+  z-index: 0;
+}
+
+@keyframes Wave {
+  from {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=index.FormValid.css.map */

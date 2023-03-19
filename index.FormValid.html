@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.FormValid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2 family=ABeeZee&family=Abril+Fatface&family=Aldrich&family=Alumni+Sans+Inline+One&family=Black+Ops+One&family=Changa+One&family=Jost&family=Keania+One&family=Lexend:wght@500&family=Maiden+Orange&family=Rammetto+One&family=Reenie+Beanie&family=Sansita&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section>
+        <main>
+            <header>
+                <h3>Register</h3>
+                <h4>Please fill your information bellow</h4>
+            </header>
+            <form action="">
+                <div>
+                    <input type="text" name="Name" id="Name" placeholder="Name">
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                </div>
+                <div>
+                    <input type="email" name="Email" id="Email" placeholder="Email">
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> email is not valid</div>
+                </div>
+                    <div class="gender">
+                    <div>
+                        <label for="Gender">Gender</label>
+                        <input type="radio" name="Gender" id="Male" value="Name">
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Gender" id="Female" value="Name">
+                        <label for="Female">Female</label>
+                        <div class="errorReq"><i class="bi bi-asterisk"></i> choose at least one</div>
+                    </div>
+                </div>
+                <div class="typ">
+                    <div>
+                        <label for="Type">Type</label>
+                        <input type="radio" name="Type" id="sponsored" value="Type">
+                        <label for="Type">sponsored</label>
+                        <input type="radio" name="Type" id="paid" value="Type">
+                        <label for="Type">paid</label>
+                        <div class="errorReq"><i class="bi bi-asterisk"></i> choose at least one</div>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="Address" id="Address" placeholder="Address">
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                </div>
+                <div class="szip">
+                    <div>
+                        <input type="tel" name="StrNum" id="StrNum" placeholder="Str Number">
+                        <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                        <div class="errorReq"><i class="bi bi-asterisk"></i> must be a number</div>
+                    </div>
+                    <div>
+                        <input type="text" name="ZipCode" id="Zipcode" placeholder="Zip Code">
+                        <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                        <div class="errorReq"><i class="bi bi-asterisk"></i> must be a number</div>
+                    </div>
+                </div>
+                <div>
+                    <input type="tel" name="Number" id="Number" placeholder="Phone">
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> required field</div>
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> must be a number</div>
+                    <div class="errorReq"><i class="bi bi-asterisk"></i> must be 11 digits</div>
+                </div>
+                <div>
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <p>Already have an account? <a href="#">Login here</a></p>
+            </div>
+          </footer>
+          <i class="anime"></i>
+    </section>
+</body>
+<script src="assets/js/index.FormValid.js"></script>
+</html>
